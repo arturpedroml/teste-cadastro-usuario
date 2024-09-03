@@ -1,0 +1,84 @@
+/* css/style.css */
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #282a36;
+    color: #f8f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #44475a;
+    padding: 30px;
+    border-radius: 12px;
+    width: 360px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #50fa7b;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #f8f8f2;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #6272a4;
+    border-radius: 6px;
+    background-color: #f8f8f2;
+    color: #282a36;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #ff79c6;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #bd93f9;
+    color: #282a36;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff79c6;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#message.success {
+    color: #50fa7b;
+}
+
+#message.error {
+    color: #ff5555;
+}
